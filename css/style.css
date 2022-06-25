@@ -1,0 +1,111 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    border: 1px solid red;
+}
+
+.container{
+    box-sizing: border-box;
+    /* On ajoute une marge sur tous les cotes */
+    padding-right: 15px;
+    padding-left: 15px;
+    /* Et on centre */
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid blue;
+}
+
+header{
+    width: 100%;
+    margin: auto;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.panier{
+    font-size: xx-large;
+    display: inline-flex;
+    
+}
+
+.content{
+    /* On ajoute une marge sur tous les cotes */
+    box-sizing: border-box;
+    display: flex;
+    border: 1px solid blue;
+}
+
+.texte{
+    width: 50%;
+    padding-left: 5%;
+}
+
+.hero{
+  
+   width: 50%;
+
+}
+
+.hero-img{
+    width: 100%;
+    margin-top: 20px;
+    padding: ;
+    box-sizing: border-box;
+}
+
+.font-black{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.title{
+    font-size: x-large;
+}
+
+.faim{
+    text-transform: uppercase;
+    color: red;
+}
+
+.btn-commande{
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 13px 13px;
+    font-size: x-large;
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 10px;
+}
+
+.deliver{
+   display: flex;
+   justify-content: space-between;
+}
+
+.fa-red{
+    display: inline-flex;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 100%;
+}
