@@ -25,27 +25,33 @@
                     </ul>
     
                     <div class="panier">
-                       <div>
-                        <i class="fa fa-shopping-basket"></i>
+                       <div class="fa1">
+                            <i class="fa fa-shopping-basket"></i>
+                            <span id="count">0</span>                       
                        </div>
 
-                       <div>
-                        <i class="fa fa-user"></i> 
+                       <div class="fa1">
+                            <i class="fa fa-user"></i> 
                        </div>
+                        <div id="phonebtn">
+                            
+                        </div>
                     </div>
+
+                    
         
                 </nav>
             </header>
 
             <main>
-                <div class="content">
-    
-                    <div class="texte" style="border: 2px solid green;">
+                <!-- Home Section -->
+                <section class="home">
+                    <div class="texte">
                         <p class="title">Commande Rapide et Express</p>
-                        <div class="famine">
-                            <h1 class="faim">avez vous faim?</h1>
-                            <p class="font-black">Attendez juste la nourriture a votre porte</p>
-                        </div>
+                        <p>
+                            <span class="faim">avez vous faim?</span><br>
+                            <span class="font-black" >Attendez juste la nourriture a votre porte</span>
+                        </p>
                         <p>
                             Jamais trop de frites, Une pepite de poulet est ce qu'il
                             vous faut, Savourez la saveur C'est le jour de la triche,
@@ -67,12 +73,270 @@
                         </div>
                     </div> 
                     
-                    <div class="hero" style="border: 2px solid yellow;">
+                    <div class="hero">
                         <img src="assets/images/hero.png" alt="" srcset="" class="hero-img">
                     </div>
-                </div>
-            </main>
+                </section>
 
+                <!-- Service section -->
+                <section class="services">
+
+                    <div class="categories">
+                        <div class="category">
+                            <img src="assets/images/category-01.png" alt="" srcset="">
+                            <p>Burger</p>
+                        </div>
+    
+                        <div class="category">
+                            <img src="assets/images/category-02.png" alt="" srcset="">
+                            <p>Pizza</p>
+                        </div>
+    
+                        <div class="category">
+                            <img src="assets/images/category-03.png" alt="" srcset="">
+                            <p>Spaguetti sauté</p>
+                        </div>
+    
+                        <div class="category">
+                            <img src="assets/images/category-04.png" alt="" srcset="">
+                            <p>Viande</p>
+                        </div>
+    
+                    </div>
+
+                    <div class="service-description">
+                        <p class="title">
+                            <span class="title-red">Ce que nous servons</span><br>
+                            Restez simplement à la maison<br>
+                            Nous allons prendre soin de vous
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. 
+                            <br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+
+                    <div class="service-part">
+                        <div class="service service-livraison">
+                            <img src="assets/images/service-01.png" alt="" srcset="">
+                            <p>Livraison rapide</p>
+                            <p> 
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            
+                        </div>
+
+                        <div class="service service-repas">
+                            <img src="assets/images/service-02.png" alt="" srcset="">
+                            <p>Super Repas</p>
+                            <p> 
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+
+                        <div class="service service-ramassage">
+                            <img src="assets/images/service-03.png" alt="" srcset="">
+                            <p>Ramassage Express</p>
+                            <p> 
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section Pizza Popular -->
+                <section class="foods">
+                    <p class="title-popular">Popular Foods</p>
+                    <nav class="nav-foods">
+                        <button id="btn-all">All</button>
+                       
+                        <ul>
+                            <li id="burger"><a href="#"><img src="assets/images/hamburger.png" alt="" srcset="" class="list-img"> Burger</a></li>
+                            <li id="pizza"><a href="#"><img src="assets/images/pizza1.png" alt="" srcset="" class="list-img"> Pizza</a></li>
+                            <li id="drink"><a href="#"><img src="assets/images/soda1.png" alt="" srcset="" class="list-img"> Drinks</a></li>
+                        </ul>
+                      
+                        
+                    </nav>
+
+                    <div class="burgers">
+                        <div class="row1">
+                            <div class="burger">
+                                <img src="assets/images/product_2.3.jpg" alt="" srcset="" >
+                                <p class="burger-name">Chicken burger</p>
+                                <div class="cart">
+                                    <p class="price">3000 fcfa</p>
+                                    <button class="btn-cart">Add to cart</button>
+                                </div>
+                            </div>
+
+                            <div class="burger">
+                                <img src="assets/images/product_01.1.jpg" alt="" srcset=""  >
+                                <p class="burger-name">Royal Cheese Burger</p>
+                                <div class="cart">
+                                    <p class="price">1500 fcfa</p>
+                                    <button class="btn-cart">Add to cart</button>
+                                </div>
+                            </div>
+
+                            <div class="burger">
+                                <img src="assets/images/product_01.3.jpg" alt="" srcset="" >
+                                <p class="pizza-name">Classic Hamburger</p>
+                                <div class="cart">
+                                    <p class="price">1500 fcfa</p>
+                                    <button class="btn-cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row2">
+                            <div class="burger">
+                                <img src="assets/images/product_01.jpg" alt="" srcset="" >
+                                <p class="burger-name">Cheese Burger</p>
+                                <div class="cart">
+                                    <p class="price">3000 fcfa</p>
+                                    <button class="btn-cart">Add to cart</button>
+                                </div>
+                            </div>
+
+                            <div class="burger">
+                                <img src="assets/images/product_2.1.jpg" alt="" srcset="" >
+                                <p class="pizza-name">Vegetarian Pizza</p>
+                                <div class="cart">
+                                    <p class="price">4500 fcfa</p>
+                                    <button class="btn-cart">Add to cart</button>
+                                </div>
+                            </div>
+
+                            <div class="burger">
+                                <img src="assets/images/product_2.2.jpg" alt="" srcset="" >
+                                <p class="burger-name">Chicken Burger</p>
+                                <div class="cart">
+                                    <p class="price">3000 fcfa</p>
+                                    <button class="btn-cart">Add to cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <p class="title-popular">Hoot Pizza</p>
+                    <div class="hoot-pizzas">
+                        <div class="pizza">
+                            <img src="assets/images/product_4.3.png" alt="" srcset="">
+                            <p class="pizza-name">Maxican Green Wave</p>
+                            <div class="cart">
+                                <p class="price">3000 fcfa</p>
+                                <button class="btn-cart">Add to cart</button>
+                            </div>
+                        </div>
+
+                        <div class="pizza">
+                            <img src="assets/images/product_3.1.jpg" alt="" srcset="" >
+                            <p class="pizza-name">Double Cheese Margheritta</p>
+                            <div class="cart">
+                                <p class="price">4500 fcfa</p>
+                                <button class="btn-cart">Add to cart</button>
+                            </div>
+                        </div>
+
+                        <div class="pizza">
+                            <img src="assets/images/product_4.2.jpg" alt="" srcset="" >
+                            <p class="pizza-name">Pizza With Mushroom</p>
+                            <div class="cart">
+                                <p class="price">4500 fcfa</p>
+                                <button class="btn-cart">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <p class="title-popular">Drinks</p>
+                    <div class="drinks">
+                        <div class="drink coca-cola">
+                            <img src="assets/images/drinks1.jpg" alt="" srcset="" >
+                            <p class="drink-name">Coca Cola</p>
+                            <div class="cart">
+                                <p class="price">1500 fcfa</p>
+                                <button class="btn-cart">Add to cart</button>
+                            </div>
+
+                        </div>
+                        <div class="drink fanta">
+                            <img src="assets/images/fanta.png" alt="" srcset="" >
+                            <p class="drink-name">Fanta</p>
+                            <div class="cart">
+                                <p class="price">1500 fcfa</p>
+                                <button class="btn-cart">Add to cart</button>
+                            </div>
+
+                        </div>
+                        <div class="drink pepsi">
+                            <img src="assets/images/Pepsi.jpg" alt="" srcset="" >
+                            <p class="drink-name">Pepsi</p>
+                            <div class="cart">
+                                <p class="price">1500 fcfa</p>
+                                <button class="btn-cart">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
+         <!-- Footer -->
+         <footer>
+           
+            <div class="footer1">
+                <div class="eat-drink">
+                    <div class="logo">
+                        <img src="assets/images/res-logo.png" alt="Eat and Drink Logo" >
+                        <p class="font-black">Eat & Drink</p>
+                        <p>
+                            Jamais trop de frites, Une pepite de poulet est ce qu'il
+                            vous faut, Savourez la saveur C'est le jour de la triche,
+                            n'aie pas peur
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="hour-deliver">
+                    //
+    
+                </div>
+    
+                <div class="contat">
+                    //
+    
+                </div>
+    
+                <div class="newsletter">
+                    <h5>Newsletter</h5>
+                    <p>Abonnez-vous à notre newsletter</p>
+                    <input type="email" name="newsletter" id="newsletter" placeholder="Votre email">
+    
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="social-media">
+                <p>Nous suivre</p>
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></i></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></i></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

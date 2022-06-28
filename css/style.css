@@ -2,17 +2,14 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     border: 1px solid red;
 }
-
 .container{
+    width: 992px;
     box-sizing: border-box;
-    /* On ajoute une marge sur tous les cotes */
-    padding-right: 15px;
-    padding-left: 15px;
-    /* Et on centre */
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
     border: 1px solid blue;
 }
+
+/* Header */
 
 header{
     width: 100%;
@@ -41,34 +38,52 @@ nav ul li a{
     color: black;
 }
 
-.panier{
-    font-size: xx-large;
-    display: inline-flex;
-    
+#phonebtn {
+    display: none;
+    background-color: silver;
+    width: 48px;
+    height: 48px;
 }
 
-.content{
-    /* On ajoute une marge sur tous les cotes */
+.panier{
+    font-size: xx-large;
+    display: flex;
+}
+
+.fa1{
+    margin: 10%;
+}
+
+#count{
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    font-size: x-small;
+    position: absolute;
+}
+
+/* Home section */
+
+.home{
     box-sizing: border-box;
     display: flex;
-    border: 1px solid blue;
 }
 
 .texte{
     width: 50%;
-    padding-left: 5%;
+    padding-left: 4%;
 }
 
 .hero{
-  
-   width: 50%;
 
+   width: 35%;
+   padding-left: 1%;
+   
 }
 
 .hero-img{
     width: 100%;
-    margin-top: 20px;
-    padding: ;
     box-sizing: border-box;
 }
 
@@ -83,23 +98,39 @@ nav ul li a{
 
 .faim{
     text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: bold;
     color: red;
 }
 
 .btn-commande{
-    background-color: red;
-    border: 1px solid white;
-    border-radius: 13px 13px;
+    border: 2px solid transparent;
+    border-radius: 25px;
     font-size: x-large;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    padding: 10px 25px;
+    transition: transform .4s;
+    cursor: pointer;
+}
+
+.btn-commande:hover{
+    background-color: red;
     color: white;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    padding: 10px;
+    transform: scale(1.2);
 }
 
 .deliver{
    display: flex;
-   justify-content: space-between;
+   align-items: center;
+}
+
+.fa-care{
+    width: 50%;
+}
+
+.fa-checke{
+    width: 50%;
 }
 
 .fa-red{
@@ -108,4 +139,285 @@ nav ul li a{
     color: white;
     padding: 5px;
     border-radius: 100%;
+}
+
+
+/* Service section */
+
+.services{
+    border: 2px solid orange;
+    margin-top: 5%;
+}
+
+.categories{
+    display: flex;
+    justify-content: space-around;
+}
+
+.category{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:  rgb(231, 173, 173);
+    border: 1px solid white;
+    border-radius: 13px;
+    width: 25%;
+    margin: 3%;
+    padding: 1%;
+}
+
+div.category img{
+   width:20%;
+}
+
+.service-description{
+    text-align: center;
+}
+
+.title-red{
+
+    color: red;
+}
+
+.service-part{
+    display: flex;
+    margin: 5%;
+}
+
+.service{
+    text-align: center;
+    margin: 1%;
+}
+
+
+/* Section Pizza Popular Food  */
+.popular-food{
+    border: 2px solid pink;
+}
+
+.title-popular{
+    text-align: center;
+    font-size: xx-large;
+}
+
+nav.nav-foods{
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 15px;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+nav.nav-foods ul li{
+    align-items: center;
+}
+
+nav.nav-foods ul li a{
+    color: white;
+    cursor: pointer;
+}
+.list-img{
+    width: 15px;
+}
+
+#btn-all{
+    font-size: large;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 5%;
+    cursor: pointer;
+}
+
+.burgers{
+    margin: 1%;
+}
+.row1, .row2{
+    box-sizing: border-box;
+    display: flex;
+}
+
+.row1{
+    margin-bottom: 1%;
+}
+
+/* .row2{
+    border: 2px solid rgb(139, 34, 95);
+} */
+
+.burger{
+    border: 1px solid red;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+}
+div.burger img{
+    width: 50%;
+}
+.hoot-pizzas{
+    box-sizing: border-box;
+    display: flex;
+    margin: 1%;
+}
+
+.pizza{
+    border: 1px solid red;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+    width: 30%;
+}
+
+div.pizza img{
+    width: 50%;
+}
+
+.drinks{
+    box-sizing: border-box;
+    display: flex;
+    margin: 1%;
+}
+
+.drink{
+    border: 1px solid red;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+    width: 30%;
+}
+
+div.coca-cola img{
+    width: 80%;
+}
+
+div.pepsi img{
+    width: 100%;
+}
+
+.pepsi{
+    padding: auto;
+}
+
+.coca-cola{
+    padding-bottom: 2%;
+}
+
+div.fanta img{
+    width: 110%;
+}
+
+.price{
+    font-size: large;
+    font-weight: bold;
+    color: red;
+    width: 50%;
+}
+.cart{
+    display: flex;
+}
+
+.btn-cart{
+    border: 1px solid white;
+    width: 50%;
+    border-radius: 25px;
+    background-color: red;
+    color: white;
+}
+
+/* Footer */
+footer{
+    background-color: rgb(231, 173, 173);
+    box-sizing: border-box;
+    margin-top: 3%;
+    padding: 7%;
+    width: 100%;
+}
+
+.footer1{
+
+    display: flex;
+}
+
+hr{
+    width: 100%;
+}
+
+input{
+    font-size: larger;
+    text-align: center;
+    padding: 3%;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+
+}
+
+div.social ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+div.social ul li a{
+    color: white;
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 100%;
+    font-size: x-large;
+    padding: 50%;
+}
+
+/* Gestion du responsive sur tablette */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    body{
+        background-color: blue;
+    }
+}
+
+/* Gestion du responsive sur telephone */
+@media screen and (max-width: 767px) {
+    nav ul {
+        /* position: fixed; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* top : 0 ;
+        right : 25px; */
+    }
+    
+    body{
+        background-color: yellow;
+    }
+
+    /* Home section */
+
+    .home{
+        box-sizing: border-box;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .texte{
+        width: 70%;
+        padding-left: 4%;
+    }
+    
+    .hero{
+    
+       width: 70%;
+       padding-left: 1%;
+       
+    }
+
+
+    #phonebtn {
+        display: flex;
+     }
 }
