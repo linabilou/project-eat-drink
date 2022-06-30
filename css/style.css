@@ -6,7 +6,6 @@ body{
     width: 992px;
     box-sizing: border-box;
     margin: auto;
-    border: 1px solid blue;
 }
 
 /* Header */
@@ -18,6 +17,13 @@ header{
 
 .logo{
     cursor: pointer;
+}
+
+.logo-nav{
+    width: 45%;
+}
+.eatdrink-nav{
+    margin-top: 0; 
 }
 
 nav{
@@ -36,6 +42,13 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: black;
+}
+
+nav ul li a:hover{
+    color: red;
+    border: 1px solid white;
+    border-radius: 10px 10px;
+    padding: 10px;
 }
 
 #phonebtn {
@@ -104,6 +117,7 @@ nav ul li a{
 }
 
 .btn-commande{
+    background-color: rgb(231, 173, 173);
     border: 2px solid transparent;
     border-radius: 25px;
     font-size: x-large;
@@ -145,7 +159,6 @@ nav ul li a{
 /* Service section */
 
 .services{
-    border: 2px solid orange;
     margin-top: 5%;
 }
 
@@ -210,10 +223,12 @@ nav.nav-foods{
 
 nav.nav-foods ul li{
     align-items: center;
+    
 }
 
 nav.nav-foods ul li a{
     color: white;
+    border: none;
     cursor: pointer;
 }
 .list-img{
@@ -241,15 +256,15 @@ nav.nav-foods ul li a{
     margin-bottom: 1%;
 }
 
-/* .row2{
-    border: 2px solid rgb(139, 34, 95);
-} */
-
 .burger{
     border: 1px solid red;
     text-align: center;
     margin: 1%;
     padding: 1%;
+    transition: transform .4s;
+}
+.burger:hover{
+    transform: scaleY(1.1);
 }
 div.burger img{
     width: 50%;
@@ -266,6 +281,11 @@ div.burger img{
     margin: 1%;
     padding: 1%;
     width: 30%;
+    transition: transform .4s
+}
+
+.pizza:hover{
+    transform: scaleY(1.1);
 }
 
 div.pizza img{
@@ -284,6 +304,10 @@ div.pizza img{
     margin: 1%;
     padding: 1%;
     width: 30%;
+    transition: transform .4s
+}
+.drink:hover{
+    transform: scaleY(1.1);
 }
 
 div.coca-cola img{
@@ -329,25 +353,68 @@ footer{
     background-color: rgb(231, 173, 173);
     box-sizing: border-box;
     margin-top: 3%;
-    padding: 7%;
     width: 100%;
 }
 
 .footer1{
 
     display: flex;
+    justify-content: space-around;
 }
+
+.eat-drink, .hour-deliver, .contact, .newsletter{
+    width: 25%;
+    padding: 2%;
+}
+/* .hour-deliver, .contact, .newsletter{
+    margin-top: -25px;
+} */
+
+.vend-sam{
+    font-size: small;
+    font-weight: bold;
+}
+
+.logo-foot{
+    width: 25%;
+}
+
+.eatdrink-foot{
+    font-weight: bold;
+}
+.desc{
+    text-align: left;
+}
+
+.femme, .hour{
+    font-size: smaller;
+}
+
+.yde{
+    font-size: smaller;
+}
+.news{
+    font-size: small;
+}
+.phone-email{
+    font-weight: bold;
+    font-size: smaller;
+}
+
 
 hr{
     width: 100%;
 }
 
+
+
 input{
     font-size: larger;
     text-align: center;
+    width: 100%;
     padding: 3%;
     border: 1px solid white;
-    border-radius: 100%;
+    border-radius: 25px 25px;
 }
 
 .social-media{
@@ -364,12 +431,14 @@ div.social ul li{
     padding: 10px 25px;
 }
 
+
+
 div.social ul li a{
     color: white;
     background-color: red;
+    /* background-color: red; */
     border: 1px solid white;
     border-radius: 100%;
-    font-size: x-large;
     padding: 50%;
 }
 
