@@ -124,7 +124,6 @@ nav a:hover
 
 .texte{
     width: 50%;
-    padding-left: 4%;
 }
 
 .hero{
@@ -214,7 +213,7 @@ nav a:hover
     border: 1px solid white;
     border-radius: 13px;
     width: 25%;
-    margin: 3%;
+    margin: 0.5%;
     padding: 1%;
 }
 
