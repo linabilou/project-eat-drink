@@ -48,8 +48,7 @@ header h2
 
 /* Navigation */
 
-nav
-{
+nav{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -63,21 +62,18 @@ nav ul li{
     padding: 10px 25px;
 }
 
-nav li
-{
+nav li{
     margin-right: 15px;
 }
 
-nav a
-{
+nav a{
     font-size: 1.3em;
     color: #181818;
     padding-bottom: 3px;
     text-decoration: none;
 }
 
-nav a:hover
-{
+nav a:hover{
     color: red;
     border: 1px solid white;
     border-radius: 10px 10px;
@@ -258,7 +254,11 @@ nav.nav-foods{
     justify-content: space-evenly;
     padding: 0;
 }
-
+nav.nav-foods button{
+    width: 5%;
+    margin: auto 0;
+    padding: 5px;
+}
 nav.nav-foods ul li{
     align-items: center;
     
@@ -278,7 +278,6 @@ nav.nav-foods ul li a{
     background-color: white;
     border: 1px solid white;
     border-radius: 10px;
-    width: 5%;
     cursor: pointer;
 }
 
