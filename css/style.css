@@ -347,6 +347,30 @@ div.pizza img{
     transform: scaleY(1.1);
 }
 
+.cart{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.price{
+    font-size: larger;
+    font-weight: bold;
+    color: red;
+}
+
+.btn-cart{
+    background-color: red;
+    border: 1px solid white;
+    color: white;
+    border-radius: 25px;
+    font-size: small;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
 div.coca-cola img{
     width: 80%;
 }
@@ -367,23 +391,7 @@ div.fanta img{
     width: 110%;
 }
 
-.price{
-    font-size: large;
-    font-weight: bold;
-    color: red;
-    width: 50%;
-}
-.cart{
-    display: flex;
-}
 
-.btn-cart{
-    border: 1px solid white;
-    width: 50%;
-    border-radius: 25px;
-    background-color: red;
-    color: white;
-}
 
 /* Footer */
 footer{
