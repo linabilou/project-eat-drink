@@ -215,6 +215,7 @@ div.texte p:last-child{
 
 .category{
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(251, 117, 117);
@@ -236,7 +237,7 @@ div.category img{
 }
 
 .service-description{
-    margin-top: 50px;
+    margin: 10% 0 0 0;
     text-align: center;
 }
 
@@ -247,12 +248,22 @@ div.category img{
 
 .service-part{
     display: flex;
-    margin: 5%;
+    flex-direction: row;
+    margin: 5% 0 0 0;
+    
 }
 
 .service{
     text-align: center;
-    margin: 1%;
+    margin: 5%;
+}
+
+.service-livraison{
+    margin-left: 0;
+}
+
+.service-ramassage{
+    margin-right: 0;
 }
 
 
@@ -261,17 +272,22 @@ div.category img{
     border: 2px solid pink;
 }
 
+.foods{
+    margin-top: 2%;
+}
+
 .title-popular{
     text-align: center;
     font-size: xx-large;
+    margin-top: 0;
 }
 
 nav.nav-foods{
+    display: flex;
+    justify-content: center;
     background-color: red;
     border: 1px solid white;
     border-radius: 15px;
-    justify-content: space-evenly;
-    padding: 0;
 }
 nav.nav-foods button{
     width: 5%;
@@ -280,6 +296,7 @@ nav.nav-foods button{
 }
 nav.nav-foods ul li{
     align-items: center;
+    margin: 0;
     
 }
 
