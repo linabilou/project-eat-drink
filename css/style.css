@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
-    font-family: 'Josefin Sans', sans-serif;
     border: 1px solid red;
+    font-family: 'Roboto';
 }
 .container{
     width: 992px;
@@ -80,7 +81,7 @@ nav a:hover{
     padding: 10px;
 }
 
-#phonebtn {
+#toggle-btn {
     display: none;
     width: 48px;
     height: 48px;
@@ -122,10 +123,13 @@ nav a:hover{
     width: 50%;
 }
 
+div.texte p:last-child{
+    padding: 5%;
+}
+
 .hero{
 
-   width: 35%;
-   padding-left: 1%;
+   width: 40%;
    
 }
 
@@ -151,13 +155,12 @@ nav a:hover{
 }
 
 .btn-commande{
-    background-color: rgb(231, 173, 173);
-    border: 2px solid transparent;
-    border-radius: 25px;
-    font-size: x-large;
-    margin-top: 5%;
-    margin-bottom: 7%;
-    padding: 10px 25px;
+    background-color: rgb(251, 117, 117);
+    border-radius: 10px;
+    margin: 20px 20px 20px 0;
+    padding: 10px;
+    width: 50%;
+    border: none;
     transition: transform .4s;
     cursor: pointer;
 }
@@ -173,12 +176,16 @@ nav a:hover{
    align-items: center;
 }
 
-.fa-care{
+/* .fa-care{
     width: 50%;
 }
 
 .fa-checke{
     width: 50%;
+} */
+
+.fa-care{
+    margin-right: 50px;
 }
 
 .fa-red{
@@ -196,21 +203,32 @@ nav a:hover{
     margin-top: 5%;
 }
 
+.svc{
+    width: 50%;
+}
+
 .categories{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .category{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color:  rgb(231, 173, 173);
+    background-color: rgb(251, 117, 117);
     border: 1px solid white;
-    border-radius: 13px;
+    border-radius: 10px;
     width: 25%;
-    margin: 0.5%;
+    margin: 1%;
     padding: 1%;
+}
+
+.category:hover{
+    transition: 1s ease-in-out;
+    transform: translateY(-20px);
+    cursor: pointer;
 }
 
 div.category img{
@@ -218,6 +236,7 @@ div.category img{
 }
 
 .service-description{
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -395,7 +414,7 @@ div.fanta img{
 
 /* Footer */
 footer{
-    background-color: rgb(231, 173, 173);
+    background-color: rgb(243, 113, 113);
     box-sizing: border-box;
     margin-top: 3%;
     width: 100%;
@@ -404,35 +423,39 @@ footer{
 .footer1{
 
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    margin: auto;
+    width: 992px;
 }
 
 .eat-drink, .hour-deliver, .contact, .newsletter{
     width: 25%;
-    padding: 2%;
-}
-/* .hour-deliver, .contact, .newsletter{
-    margin-top: -25px;
-} */
-
-.vend-sam{
-    font-size: small;
-    font-weight: bold;
 }
 
-.logo-foot{
-    width: 25%;
+div.eat-drink h2{
+    font-size: 1.1em;
+    margin: 0;
+
 }
 
-.eatdrink-foot{
-    font-weight: bold;
+div.hour-deliver h2{
+    font-size: 1.1em;
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
 .desc{
-    text-align: left;
+    font-size: small;
+    margin: 0;
 }
 
+.date{
+
+    font-weight: bold;
+    margin: 0;
+}
 .femme, .hour{
-    font-size: smaller;
+    font-size: x-small;
+    margin-top: 0;
 }
 
 .yde{
@@ -446,13 +469,6 @@ footer{
     font-size: smaller;
 }
 
-
-hr{
-    width: 100%;
-}
-
-
-
 input{
     font-size: larger;
     text-align: center;
@@ -462,29 +478,36 @@ input{
     border-radius: 25px 25px;
 }
 
+.separateur-social{
+    display: flex;
+    flex-direction: column;
+}
+
 .social-media{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3%;
+}
 
+.social{
+    margin-top: 0;
 }
 
 div.social ul li{
     list-style-type: none;
     display: inline-block;
-    padding: 10px 25px;
+    padding: 10px;
 }
 
 
 
 div.social ul li a{
     color: white;
-    background-color: red;
-    /* background-color: red; */
+    font-size: larger;
+    background-color: red; 
     border: 1px solid white;
     border-radius: 100%;
-    padding: 50%;
+    padding: 0;
 }
 
 /* Gestion du responsive sur tablette */
@@ -497,41 +520,204 @@ div.social ul li a{
 
 /* Gestion du responsive sur telephone */
 @media screen and (max-width: 767px) {
-    nav ul {
-        /* position: fixed; */
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        /* top : 0 ;
-        right : 25px; */
-    }
-    
+        
     body{
         background-color: yellow;
+    }
+
+    .container{
+        width: auto;
+        margin: auto 0;
+        padding: 0 15%;
+    }
+
+    /* Header */
+
+    .fa1{
+        margin: 3%;
+    }
+
+    #nav-desktop{
+        display: none;
+    }
+    
+
+
+    #toggle-btn {
+        display: flex;
+    
     }
 
     /* Home section */
 
     .home{
         box-sizing: border-box;
-        margin: auto;
+        display: flex;
         flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        
     }
 
     .texte{
-        width: 70%;
-        padding-left: 4%;
+        width: 100%;
     }
-    
+
     .hero{
+
+        width: 100%;
     
-       width: 70%;
-       padding-left: 1%;
-       
     }
 
+    .hero-img{
+        width: 100%;
+        box-sizing: border-box;
+    }
 
-    #phonebtn {
+    .font-black{
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .title{
+        font-size: large;
+    }
+
+    .faim{
+        text-transform: uppercase;
+        font-size: x-large;
+        font-weight: bold;
+        color: red;
+    }
+
+    .btn-commande{
+        background-color: rgb(243, 113, 113);
+        border: 2px solid transparent;
+        border-radius: 25px;
+        font-size: x-large;
+        margin-top: 5%;
+        margin-bottom: 7%;
+        padding: 10px 25px;
+        transition: transform .4s;
+        cursor: pointer;
+    }
+
+    .btn-commande:hover{
+        background-color: red;
+        color: white;
+        transform: scale(1.2);
+    }
+
+    .deliver{
+    display: flex;
+    align-items: center;
+    }
+
+    .fa-care{
+        width: 50%;
+    }
+
+    .fa-checke{
+        width: 50%;
+    }
+
+    .fa-red{
+        display: inline-flex;
+        background-color: red;
+        color: white;
+        padding: 5px;
+        border-radius: 100%;
+    }
+
+    /* Footer */
+    footer{
+        background-color: rgb(231, 173, 173);
+        box-sizing: border-box;
+        margin-top: 3%;
+        max-width:767px;
+    }
+
+    .footer1{
+
         display: flex;
-     }
+        flex-direction: column;
+         
+    }
+    .eat-drink, .hour-deliver, .contact, .newsletter{
+        width: 25%;
+        padding: 2%;
+    }
+    
+    div.eat-drink h2{
+        font-size: 1.1em;
+    
+    }
+    
+    div.hour-deliver h2{
+        font-size: 1.1em;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+    .desc{
+        font-size: small;
+        margin: 0;
+    }
+    
+    .date{
+    
+        font-weight: bold;
+        margin: 0;
+    }
+    .femme, .hour{
+        font-size: x-small;
+        margin-top: 0;
+    }
+    
+    .yde{
+        font-size: smaller;
+    }
+    .news{
+        font-size: small;
+    }
+    .phone-email{
+        font-weight: bold;
+        font-size: smaller;
+    }
+    
+    
+    hr{
+        visibility: hidden;
+    }
+    
+    input{
+        font-size: larger;
+        text-align: center;
+        width: 100%;
+        padding: 3%;
+        border: 1px solid white;
+        border-radius: 25px 25px;
+    }
+    
+    .social-media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div.social ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+    }
+    
+    
+    
+    div.social ul li a{
+        color: white;
+        font-size: larger;
+        background-color: red; 
+        border: 1px solid white;
+        border-radius: 100%;
+        padding: 0;
+    }
 }

@@ -19,7 +19,7 @@
                     <h2>Eat & Drink</h2>
                 </div>
 
-                <nav>        
+                <nav id="nav-desktop">        
                     <ul>
                         <li><a href="#" class="font-black" >Acceuil</a></li>
                         <li><a href="#" class="font-black">Repas</a></li>
@@ -40,9 +40,9 @@
                     <div class="fa1">
                          <i class="fa fa-user"></i> 
                     </div>
-                     <div id="phonebtn" class="fa1">
-                         <i class="fa fa-bars"></i>
-                     </div>
+                    <div id="toggle-btn" class="fa1">
+                        <i class="fa fa-bars"></i>
+                    </div>
                  </div>
 
             </header>
@@ -62,7 +62,7 @@
                             n'aie pas peur
                         </p>
             
-                        <button class="btn-commande"> Commandez maintenant ></button>
+                        <button class="btn-commande"> Commandez maintenant <i class="fa fa-angle-right"></i> </button>
 
                         <div class="deliver">
                            <div class="fa-care">
@@ -84,28 +84,26 @@
 
                 <!-- Service section -->
                 <section class="services">
-
                     <div class="categories">
                         <div class="category">
-                            <img src="assets/images/category-01.png" alt="" srcset="">
-                            <p>Burger</p>
+                            <img src="assets/images/category-01.png" alt="Burger" srcset="" class="svc-img">
+                            <p class="svc-name">Burger</p>
                         </div>
     
                         <div class="category">
-                            <img src="assets/images/category-02.png" alt="" srcset="">
-                            <p>Pizza</p>
+                            <img src="assets/images/category-02.png" alt="Pizza" srcset="" class="svc-img">
+                            <p class="svc-name">Pizza</p>
                         </div>
     
                         <div class="category">
-                            <img src="assets/images/category-03.png" alt="" srcset="">
-                            <p>Spaguetti sauté</p>
+                            <img src="assets/images/category-03.png" alt="Spaguetti sauté" srcset="" class="svc-img">
+                            <p class="svc-name">Spaguetti sauté</p>
                         </div>
     
                         <div class="category">
-                            <img src="assets/images/category-04.png" alt="" srcset="">
-                            <p>Viande</p>
+                            <img src="assets/images/category-04.png" alt="Viande" srcset="" class="svc-img">
+                            <p class="svc-name">Viande</p>
                         </div>
-    
                     </div>
 
                     <div class="service-description">
@@ -125,7 +123,7 @@
 
                     <div class="service-part">
                         <div class="service service-livraison">
-                            <img src="assets/images/service-01.png" alt="" srcset="">
+                            <img src="assets/images/service-01.png" alt="Service Livraison" srcset="" class="svc">
                             <p>Livraison rapide</p>
                             <p> 
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -135,7 +133,7 @@
                         </div>
 
                         <div class="service service-repas">
-                            <img src="assets/images/service-02.png" alt="" srcset="">
+                            <img src="assets/images/service-02.png" alt="Service Super Repas" srcset="" class="svc">
                             <p>Super Repas</p>
                             <p> 
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -144,7 +142,7 @@
                         </div>
 
                         <div class="service service-ramassage">
-                            <img src="assets/images/service-03.png" alt="" srcset="">
+                            <img src="assets/images/service-03.png" alt="Service Ramassage Express" srcset="" class="svc">
                             <p>Ramassage Express</p>
                             <p> 
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -161,16 +159,16 @@
                         <button id="btn-all">All</button>
                        
                         <ul>
-                            <li id="burger"><a href="#"><img src="assets/images/hamburger.png" alt="" srcset="" class="list-img"> Burger</a></li>
-                            <li id="pizza"><a href="#"><img src="assets/images/pizza1.png" alt="" srcset="" class="list-img"> Pizza</a></li>
-                            <li id="drink"><a href="#"><img src="assets/images/soda1.png" alt="" srcset="" class="list-img"> Drinks</a></li>
+                            <li id="burger"><a href="#"><img src="assets/images/hamburger.png" alt="Hamburger" srcset="" class="list-img"> Burger</a></li>
+                            <li id="pizza"><a href="#"><img src="assets/images/pizza1.png" alt="Pizza" srcset="" class="list-img"> Pizza</a></li>
+                            <li id="drink"><a href="#"><img src="assets/images/soda1.png" alt="Soda" srcset="" class="list-img"> Drinks</a></li>
                         </ul>
                     </nav>
 
                     <div class="burgers">
                         <div class="row1">
                             <div class="burger">
-                                <img src="assets/images/product_2.3.jpg" alt="" srcset="" >
+                                <img src="assets/images/product_2.3.jpg" alt="Burger 1" srcset="" >
                                 <p class="burger-name">Chicken burger</p>
                                 <div class="cart">
                                     <p class="price">3000 fcfa</p>
@@ -179,7 +177,7 @@
                             </div>
 
                             <div class="burger">
-                                <img src="assets/images/product_01.1.jpg" alt="" srcset=""  >
+                                <img src="assets/images/product_01.1.jpg" alt="Burger 2" srcset=""  >
                                 <p class="burger-name">Royal Cheese Burger</p>
                                 <div class="cart">
                                     <p class="price">1500 fcfa</p>
@@ -188,7 +186,7 @@
                             </div>
 
                             <div class="burger">
-                                <img src="assets/images/product_01.3.jpg" alt="" srcset="" >
+                                <img src="assets/images/product_01.3.jpg" alt="Burger 3" srcset="" >
                                 <p class="pizza-name">Classic Hamburger</p>
                                 <div class="cart">
                                     <p class="price">1500 fcfa</p>
@@ -199,7 +197,7 @@
 
                         <div class="row2">
                             <div class="burger">
-                                <img src="assets/images/product_01.jpg" alt="" srcset="" >
+                                <img src="assets/images/product_01.jpg" alt="Burger 4" srcset="" >
                                 <p class="burger-name">Cheese Burger</p>
                                 <div class="cart">
                                     <p class="price">3000 fcfa</p>
@@ -208,7 +206,7 @@
                             </div>
 
                             <div class="burger">
-                                <img src="assets/images/product_2.1.jpg" alt="" srcset="" >
+                                <img src="assets/images/product_2.1.jpg" alt="Pizza 1" srcset="" >
                                 <p class="pizza-name">Vegetarian Pizza</p>
                                 <div class="cart">
                                     <p class="price">4500 fcfa</p>
@@ -217,7 +215,7 @@
                             </div>
 
                             <div class="burger">
-                                <img src="assets/images/product_2.2.jpg" alt="" srcset="" >
+                                <img src="assets/images/product_2.2.jpg" alt="Burger 5" srcset="" >
                                 <p class="burger-name">Chicken Burger</p>
                                 <div class="cart">
                                     <p class="price">3000 fcfa</p>
@@ -232,7 +230,7 @@
                     <p class="title-popular">Hoot Pizza</p>
                     <div class="hoot-pizzas">
                         <div class="pizza">
-                            <img src="assets/images/product_4.3.png" alt="" srcset="">
+                            <img src="assets/images/product_4.3.png" alt="Pizza 2" srcset="">
                             <p class="pizza-name">Maxican Green Wave</p>
                             <div class="cart">
                                 <p class="price">3000 fcfa</p>
@@ -241,7 +239,7 @@
                         </div>
 
                         <div class="pizza">
-                            <img src="assets/images/product_3.1.jpg" alt="" srcset="" >
+                            <img src="assets/images/product_3.1.jpg" alt="Pizza 3" srcset="" >
                             <p class="pizza-name">Double Cheese Margheritta</p>
                             <div class="cart">
                                 <p class="price">4500 fcfa</p>
@@ -250,7 +248,7 @@
                         </div>
 
                         <div class="pizza">
-                            <img src="assets/images/product_4.2.jpg" alt="" srcset="" >
+                            <img src="assets/images/product_4.2.jpg" alt="Pizza 4" srcset="" >
                             <p class="pizza-name">Pizza With Mushroom</p>
                             <div class="cart">
                                 <p class="price">4500 fcfa</p>
@@ -297,22 +295,29 @@
            
             <div class="footer1">
                 <div class="eat-drink">
-                    <div >
-                        <img src="assets/images/res-logo.png" alt="Eat and Drink Logo" class="logo-foot"> <br>
-                        <span class="eatdrink-foot">Eat & Drink</span> 
-                        <p class="desc">
-                            Jamais trop de frites, Une pepite de poulet est ce qu'il
-                            vous faut, Savourez la saveur C'est le jour de la triche,
-                            n'aie pas peur
-                        </p>
+                    <div id="logo">
+                        <img src="assets/images/res-logo.png" alt="Eat and Drink Logo">    
                     </div>
+                    <h2>Eat & Drink</h2> 
+                    <p class="desc">
+                        Jamais trop de frites, Une pepite de poulet est ce qu'il
+                        vous faut, Savourez la saveur C'est le jour de la triche,
+                        n'aie pas peur
+                    </p>
+
+                    
                 </div>
     
                 <div class="hour-deliver">
-                    <h4>Heure de livraison <br> <span class="yde"> Dimanche - Lundi</span> <br>
-                         <span class="hour">10:00 23:00</span></h4>
-                    
-                    <p class="vend-sam"> Vendredi -Samedi <br> <span class="femme">Femme</span></p>  
+                    <h2>Heure de livraison</h2>
+                    <p class="desc date">
+                        Dimanche - Lundi
+                    </p>
+                    <p class="hour">10:00 23:00</p>                    
+                    <p class="desc date">
+                        Vendredi -Samedi
+                    </p>
+                    <p class="femme">Femme</p>  
     
                 </div>
     
@@ -329,23 +334,31 @@
                     <h4>Newsletter</h4>
                     <p class="news">Abonnez-vous à notre newsletter</p>
                     <input type="email" name="newsletter" id="newsletter" placeholder="Votre email">
-    
                 </div>
 
             </div>
 
-            <hr>
-            <div class="social-media">
-                <div class="social">
-                    <ul>
-                        <li>Nous suivre</li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></i></li>
-                        <li><a href="#"><i class="fa fa-youtube"></i></a></i></li>
-                    </ul>
+            <div class="n">
+                <div class="separateur">
+                    <hr>
                 </div>
+
+                <div class="social-media">
+                    <div class="social">
+                        <ul>
+                            <li>Nous suivre</li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></i></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></i></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </footer>
+
+        <!-- Script Javascript -->
+        <script src="js/script.js"></script>
     </body>
 </html>
