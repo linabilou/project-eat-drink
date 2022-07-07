@@ -226,6 +226,11 @@ div.texte p:last-child{
     padding: 1%;
 }
 
+.categories-mobiles{
+    display: none;
+
+}
+
 .category:hover{
     transition: 1s ease-in-out;
     transform: translateY(-20px);
@@ -320,6 +325,11 @@ nav.nav-foods ul li a{
 .burgers{
     margin: 1%;
 }
+
+.burgers img:hover{
+    transition: 1s ease-in-out;
+    transform: translateY(-20px);
+}
 .row1, .row2{
     box-sizing: border-box;
     display: flex;
@@ -334,11 +344,9 @@ nav.nav-foods ul li a{
     text-align: center;
     margin: 1%;
     padding: 1%;
-    transition: transform .4s;
 }
-.burger:hover{
-    transform: scaleY(1.1);
-}
+
+
 div.burger img{
     width: 50%;
 }
@@ -348,18 +356,19 @@ div.burger img{
     margin: 1%;
 }
 
+.hoot-pizzas img:hover{
+    transition: 1s ease-in-out;
+    transform: translateY(-20px);
+}
+
 .pizza{
     border: 1px solid red;
     text-align: center;
     margin: 1%;
     padding: 1%;
     width: 30%;
-    transition: transform .4s
 }
 
-.pizza:hover{
-    transform: scaleY(1.1);
-}
 
 div.pizza img{
     width: 50%;
@@ -371,6 +380,16 @@ div.pizza img{
     margin: 1%;
 }
 
+.drinks img{
+    width: 250px;
+    height: 250px;
+}
+
+.drinks img:hover{
+    transition: 1s ease-in-out;
+    transform: translateY(-20px);
+}
+
 .drink{
     border: 1px solid red;
     text-align: center;
@@ -379,9 +398,8 @@ div.pizza img{
     width: 30%;
     transition: transform .4s
 }
-.drink:hover{
-    transform: scaleY(1.1);
-}
+
+
 
 .cart{
     display: flex;
@@ -397,7 +415,7 @@ div.pizza img{
 
 .btn-cart{
     background-color: red;
-    border: 1px solid white;
+    border: none;
     color: white;
     border-radius: 25px;
     font-size: small;
@@ -406,27 +424,6 @@ div.pizza img{
     padding: 10px 25px;
     cursor: pointer;
 }
-
-div.coca-cola img{
-    width: 80%;
-}
-
-div.pepsi img{
-    width: 100%;
-}
-
-.pepsi{
-    padding: auto;
-}
-
-.coca-cola{
-    padding-bottom: 2%;
-}
-
-div.fanta img{
-    width: 110%;
-}
-
 
 
 /* Footer */
@@ -455,11 +452,17 @@ div.eat-drink h2{
 
 }
 
+.hour-deliver{
+    margin-left: 50px;
+}
+
 div.hour-deliver h2{
     font-size: 1.1em;
     margin-top: 30px;
     margin-bottom: 5px;
 }
+
+
 .desc{
     font-size: small;
     margin: 0;
@@ -474,10 +477,36 @@ div.hour-deliver h2{
     font-size: x-small;
     margin-top: 0;
 }
+/* .contact{
+    margin-left: -5px;
+} */
+div.contact h2{
+    font-size: 1.1em;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
 
 .yde{
-    font-size: smaller;
+    font-size: small;
+    font-weight: bold;
+    margin: 0;
 }
+
+.phone, .eatdrink{
+    font-size: small;
+    font-weight: bold;
+}
+
+.phone{
+    margin-bottom: 0;
+}
+
+div.newsletter h2{
+    font-size: 1.1em;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
 .news{
     font-size: small;
 }
@@ -520,10 +549,9 @@ div.social ul li{
 
 div.social ul li a{
     color: white;
-    font-size: larger;
     background-color: red; 
-    border: 1px solid white;
-    border-radius: 100%;
+    border: none;
+    border-radius: 40%;
     padding: 0;
 }
 
@@ -586,65 +614,68 @@ div.social ul li a{
     
     }
 
-    .hero-img{
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .font-black{
-        font-size: large;
-        font-weight: bold;
-    }
-
-    .title{
-        font-size: large;
-    }
-
-    .faim{
-        text-transform: uppercase;
-        font-size: x-large;
-        font-weight: bold;
-        color: red;
-    }
-
     .btn-commande{
-        background-color: rgb(243, 113, 113);
-        border: 2px solid transparent;
+        background-color: rgb(251, 117, 117);
         border-radius: 25px;
-        font-size: x-large;
-        margin-top: 5%;
-        margin-bottom: 7%;
-        padding: 10px 25px;
+        align-self: center;
+        margin: 5px 0 20px 40px;
+        padding: 10px;
+        border: none;
         transition: transform .4s;
         cursor: pointer;
     }
+    
+    /* Categories Services Section */
+   
+    .categories-desktop{
+        display: none;
 
-    .btn-commande:hover{
-        background-color: red;
-        color: white;
-        transform: scale(1.2);
     }
 
-    .deliver{
-    display: flex;
-    align-items: center;
+    .categories-mobiles{
+        display: block;
+    
     }
 
-    .fa-care{
+    .categories{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .cat-burger{
+        margin-right: 10px ;
+        margin-bottom: 10px;
+    }
+
+    .category{
         width: 50%;
     }
-
-    .fa-checke{
-        width: 50%;
+    
+    .service-part{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .svc{
+        width: 30%;
+    }
+    /* Popular foods section */
+    .row1, .row2{
+        flex-wrap: wrap;
     }
 
-    .fa-red{
-        display: inline-flex;
-        background-color: red;
-        color: white;
-        padding: 5px;
-        border-radius: 100%;
+
+    /* Hoot Pizza section */
+    .hoot-pizzas{
+       flex-wrap: wrap;
     }
+
+    /* Dinks Section*/
+    .drinks{
+        flex-wrap: wrap;
+    }
+     
 
     /* Footer */
     footer{
@@ -660,81 +691,11 @@ div.social ul li a{
         flex-direction: column;
          
     }
-    .eat-drink, .hour-deliver, .contact, .newsletter{
-        width: 25%;
-        padding: 2%;
-    }
-    
-    div.eat-drink h2{
-        font-size: 1.1em;
-    
-    }
-    
-    div.hour-deliver h2{
-        font-size: 1.1em;
-        margin-top: 30px;
-        margin-bottom: 5px;
-    }
-    .desc{
-        font-size: small;
-        margin: 0;
-    }
-    
-    .date{
-    
-        font-weight: bold;
-        margin: 0;
-    }
-    .femme, .hour{
-        font-size: x-small;
-        margin-top: 0;
-    }
-    
-    .yde{
-        font-size: smaller;
-    }
-    .news{
-        font-size: small;
-    }
-    .phone-email{
-        font-weight: bold;
-        font-size: smaller;
-    }
     
     
     hr{
         visibility: hidden;
     }
     
-    input{
-        font-size: larger;
-        text-align: center;
-        width: 100%;
-        padding: 3%;
-        border: 1px solid white;
-        border-radius: 25px 25px;
-    }
-    
-    .social-media{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    div.social ul li{
-        list-style-type: none;
-        display: inline-block;
-        padding: 10px;
-    }
-    
-    
-    
-    div.social ul li a{
-        color: white;
-        font-size: larger;
-        background-color: red; 
-        border: 1px solid white;
-        border-radius: 100%;
-        padding: 0;
-    }
+  
 }
