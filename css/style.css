@@ -92,24 +92,27 @@ nav a:hover{
     display: flex;
 }
 
-.compteur{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
 .fa1{
     margin: 10%;
 }
-
+sup{
+    font-size: small;
+}
 #count{
+    position: absolute;
+    top: 40px;
+    right: 145px;
+    bottom: auto;
+    left: auto;
     background-color: red;
     color: white;
-    border: 1px solid white;
-    width: 10px;
-    height: 10px;
+    border: none;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    padding: 6%;
-    font-size: small;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    text-align: center;
 }
 
 /* Home section */
@@ -120,11 +123,12 @@ nav a:hover{
 }
 
 .texte{
-    width: 50%;
+    width: 60%;
 }
 
 div.texte p:last-child{
     padding: 5%;
+    font-size: large;
 }
 
 .hero{
@@ -155,7 +159,8 @@ div.texte p:last-child{
 }
 
 .btn-commande{
-    background-color: rgb(251, 117, 117);
+    background-color: red;
+    color: white;
     border-radius: 10px;
     margin: 20px 20px 20px 0;
     padding: 10px;
@@ -166,8 +171,7 @@ div.texte p:last-child{
 }
 
 .btn-commande:hover{
-    background-color: red;
-    color: white;
+    background-color: rgb(27, 21, 110);
     transform: scale(1.2);
 }
 
@@ -317,7 +321,7 @@ nav.nav-foods ul li a{
 #btn-all{
     font-size: large;
     background-color: white;
-    border: 1px solid white;
+    border: none;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -615,7 +619,6 @@ div.social ul li a{
     }
 
     .btn-commande{
-        background-color: rgb(251, 117, 117);
         border-radius: 25px;
         align-self: center;
         margin: 5px 0 20px 40px;
