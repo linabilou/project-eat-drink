@@ -42,7 +42,7 @@ header
 
 header h2
 {
-    font-size: 1.1em;
+    font-size: large;
     margin-top: 0px;
     font-weight: bold;
 }
@@ -90,17 +90,19 @@ nav a:hover{
 .panier{
     font-size: x-large;
     display: flex;
+    justify-content: space-between;
+
 }
 
 .fa1{
-    margin: 10%;
+    margin: 15%;
 }
 sup{
-    font-size: small;
+    font-size: x-small;
 }
 #count{
     position: absolute;
-    top: 40px;
+    top: 45px;
     right: 145px;
     bottom: auto;
     left: auto;
@@ -110,8 +112,8 @@ sup{
     width: 15px;
     height: 15px;
     border-radius: 50%;
+    padding-bottom: 2px;
     margin-bottom: 20px;
-    font-weight: bolder;
     text-align: center;
 }
 
@@ -166,8 +168,15 @@ div.texte p:last-child{
     padding: 10px;
     width: 50%;
     border: none;
+    font-size: large;
+    font-weight: bold;
     transition: transform .4s;
     cursor: pointer;
+}
+
+.btn-commande i{
+    font-size: large;
+    font-weight: bold;
 }
 
 .btn-commande:hover{
@@ -177,16 +186,8 @@ div.texte p:last-child{
 
 .deliver{
    display: flex;
-   align-items: center;
+   align-items: stretch;
 }
-
-/* .fa-care{
-    width: 50%;
-}
-
-.fa-checke{
-    width: 50%;
-} */
 
 .fa-care{
     margin-right: 50px;
@@ -196,6 +197,7 @@ div.texte p:last-child{
     display: inline-flex;
     background-color: red;
     color: white;
+    margin-right: 2px ;
     padding: 5px;
     border-radius: 100%;
 }
@@ -326,11 +328,15 @@ nav.nav-foods ul li a{
     cursor: pointer;
 }
 
-.burgers{
+.burgers-desktop{
     margin: 1%;
 }
 
-.burgers img:hover{
+.burgers-mobile{
+    display: none;
+}
+
+.burgers-desktop img:hover{
     transition: 1s ease-in-out;
     transform: translateY(-20px);
 }
@@ -354,6 +360,7 @@ nav.nav-foods ul li a{
 div.burger img{
     width: 50%;
 }
+
 .hoot-pizzas{
     box-sizing: border-box;
     display: flex;
@@ -451,7 +458,7 @@ footer{
 }
 
 div.eat-drink h2{
-    font-size: 1.1em;
+    font-size: large;
     margin: 0;
 
 }
@@ -461,7 +468,7 @@ div.eat-drink h2{
 }
 
 div.hour-deliver h2{
-    font-size: 1.1em;
+    font-size: large;
     margin-top: 30px;
     margin-bottom: 5px;
 }
@@ -485,7 +492,7 @@ div.hour-deliver h2{
     margin-left: -5px;
 } */
 div.contact h2{
-    font-size: 1.1em;
+    font-size: large;
     margin-top: 30px;
     margin-bottom: 5px;
 }
@@ -506,7 +513,7 @@ div.contact h2{
 }
 
 div.newsletter h2{
-    font-size: 1.1em;
+    font-size: large;
     margin-top: 30px;
     margin-bottom: 5px;
 }
@@ -526,6 +533,11 @@ input{
     padding: 3%;
     border: 1px solid white;
     border-radius: 25px 25px;
+}
+
+hr{
+   width: 80%;
+   margin-left: 135px;
 }
 
 .separateur-social{
@@ -549,8 +561,6 @@ div.social ul li{
     padding: 10px;
 }
 
-
-
 div.social ul li a{
     color: white;
     background-color: red; 
@@ -564,7 +574,10 @@ div.social ul li a{
 
     body{
         background-color: blue;
+        width: auto;
     }
+
+    
 }
 
 /* Gestion du responsive sur telephone */
@@ -575,21 +588,37 @@ div.social ul li a{
     }
 
     .container{
-        width: auto;
+        width: 100%;
         margin: auto 0;
-        padding: 0 15%;
+        padding: 0 10%;
     }
 
     /* Header */
 
     .fa1{
-        margin: 3%;
+        margin: 10%;
     }
 
     #nav-desktop{
         display: none;
     }
     
+    #count {
+        position: absolute;
+        top: 33px;
+        right: 100px;
+        bottom: auto;
+        left: auto;
+        background-color: red;
+        color: white;
+        border: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        margin-bottom: 20px;
+        font-weight: bolder;
+        text-align: center;
+    }
 
 
     #toggle-btn {
@@ -601,8 +630,7 @@ div.social ul li a{
 
     .home{
         box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
+        display: block;
         margin: 0 auto;
         align-items: center;
         
@@ -610,6 +638,30 @@ div.social ul li a{
 
     .texte{
         width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .font-black{
+        font-size: large;
+        font-weight: bold;
+    }
+    
+    .title{
+        margin-top: 50px;
+        margin-bottom: 25px;
+        font-size: larger;
+    }
+    
+    .faim{
+        text-transform: uppercase;
+        font-size: larger;
+        font-weight: bold;
+        color: red;
+    }
+
+    div.texte p:nth-child(3){
+        text-align: center;
     }
 
     .hero{
@@ -621,13 +673,33 @@ div.social ul li a{
     .btn-commande{
         border-radius: 25px;
         align-self: center;
-        margin: 5px 0 20px 40px;
-        padding: 10px;
+        margin: 25px 0 50px 0;
+        font-size: large;
+        font-weight: bold;
         border: none;
         transition: transform .4s;
         cursor: pointer;
+        width: 70%;
     }
-    
+    .btn-commande i{
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .deliver{
+        display: flex;
+        align-items: stretch;
+     }
+     .fa-care{
+       margin-right: 60px;
+     }
+     
+     .fa-care, .fa-checke{
+       font-size: small;
+       
+     }
+
+   
     /* Categories Services Section */
    
     .categories-desktop{
@@ -651,8 +723,17 @@ div.social ul li a{
         margin-bottom: 10px;
     }
 
-    .category{
+    .category {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(251, 117, 117);
+        border: 1px solid white;
+        border-radius: 10px;
         width: 50%;
+        margin: 3%;
+        padding: 2%;
     }
     
     .service-part{
@@ -664,40 +745,206 @@ div.social ul li a{
         width: 30%;
     }
     /* Popular foods section */
-    .row1, .row2{
-        flex-wrap: wrap;
+       .title-popular{
+        text-align: center;
+        font-size: x-large;
+        margin-top: 30px;
     }
-
-
+    .burgers-desktop{
+        display: none;
+    }
+    .burgers-mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    .burgers-mobile img:hover{
+        transition: 1s ease-in-out;
+        transform: translateY(-20px);
+    }
+    .row1, .row2, .row3{
+        box-sizing: border-box;
+        display: flex;
+        margin: 3%;
+    }
+    
+    .burger{
+        border: 1px solid red;
+        text-align: center;
+        font-size: small;
+    }
+    
     /* Hoot Pizza section */
     .hoot-pizzas{
-       flex-wrap: wrap;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
     }
 
+    .pizza{
+        width: 94%;
+        margin: 3%;
+    }
     /* Dinks Section*/
     .drinks{
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
     }
-     
 
+    .drinks img{
+        width: 100%;
+    }
+    
+    .drink{
+        border: 1px solid red;
+        text-align: center;
+        margin: 3%;
+        padding: 1%;
+        width: 95%;
+        transition: transform .4s
+    }
+    .cart{
+        display: flex;
+       
+    }
+
+    .price{
+        margin-top: 25px;
+        font-size: x-small;
+    }
+
+    .burgers-mobile .price{
+        margin-top: 20px;
+    }
+    
+    .btn-cart{
+        background-color: red;
+        border: none;
+        color: white;
+        border-radius: 25px;
+        font-size: xx-small;
+        margin-top: 5%;
+        margin-bottom: 7%;
+        padding: 10px 25px;
+        cursor: pointer;
+    }
+    
     /* Footer */
     footer{
         background-color: rgb(231, 173, 173);
         box-sizing: border-box;
         margin-top: 3%;
-        max-width:767px;
     }
 
     .footer1{
 
         display: flex;
         flex-direction: column;
-         
+    }
+    .eat-drink, .hour-deliver, .contact, .newsletter{
+        margin-left: 50px;
+    }
+    div.eat-drink h2{
+        font-size: large;
+        margin: 5% 5% 5% 0;
+    
+    }
+    
+    .hour-deliver{
+        margin-left: 50px;
+    }
+    
+    div.hour-deliver h2{
+        font-size: smaller;
+        margin-top: 20px;
+        margin-bottom: 0;
     }
     
     
+    .desc{
+        font-size: x-small;
+        margin: 0;
+    }
+    
+    .date{
+    
+        font-weight: bold;
+        margin: 0;
+    }
+    .femme, .hour{
+        font-size: x-small;
+        margin-top: 0;
+    }
+    
+    div.contact h2{
+        font-size: smaller;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    
+    .yde{
+        font-size: x-small;
+        font-weight: bold;
+        margin: auto;
+    }
+    
+    .phone, .eatdrink{
+        font-size: x-small;
+        font-weight: bold;
+    }
+    
+    div.contact{
+        margin-bottom: 20px;
+    }
+    .phone{
+        line-height: 35px;
+    }
+    div.newsletter h2{
+        font-size: smaller;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    
+    .news{
+        font-size: x-small;
+    }
+    .phone-email{
+        font-weight: bold;
+        font-size: smaller;
+    }
+    
+    input{
+        font-size: smaller;
+        text-align: left;
+        width: 100%;
+        padding: 3%;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    .social-media{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    
+    .social{
+        margin-top: 0;
+        font-size: smaller;
+    }
+
+    /* div.social ul li:first-child{
+        font-size: smaller;
+    } */
+    
+
     hr{
-        visibility: hidden;
+        display: none;
     }
     
   
