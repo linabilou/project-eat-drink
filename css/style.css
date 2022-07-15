@@ -2,7 +2,6 @@
 body{
     /* border: 1px solid red; */
     margin: 0;
-    padding: 0;
     font-family: 'Roboto';
 }
 .container{
@@ -51,9 +50,9 @@ header h2
 
 /* Navigation */
 
-#nav-mobile{
+/* #nav-mobile{
     display: none;
-}
+} */
 
 nav{
     list-style-type: none;
