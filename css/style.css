@@ -543,8 +543,8 @@ input{
 }
 
 hr{
-   width: 80%;
-   margin-left: 135px;
+   width: 78%;
+   margin: 12px auto 12px auto;
 }
 
 .separateur-social{
