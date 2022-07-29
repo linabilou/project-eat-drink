@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
 body{
     /* border: 1px solid red; */
     margin: 0;
@@ -6,7 +11,6 @@ body{
 }
 .container{
     width: 992px;
-    box-sizing: border-box;
     margin: auto;
 }
 
@@ -107,7 +111,7 @@ sup{
 }
 #count{
     position: absolute;
-    top: 45px;
+    top: 40px;
     right: 135px;
     bottom: auto;
     left: auto;
@@ -612,8 +616,10 @@ div.social ul li a{
     
     #count {
         position: absolute;
-        top: 33px;
-        right: 100px;
+        /* top: 33px; */
+        top: 30px;
+        right: 75px;
+        /* right: 100px; */
         bottom: auto;
         left: auto;
         background-color: red;
@@ -632,9 +638,9 @@ div.social ul li a{
     
     }
 
-    #toggle-btn:hover{
+    /* #toggle-btn:hover{
 
-    }
+    } */
 
     /* #toggle-btn:hover{
 
@@ -688,7 +694,7 @@ div.social ul li a{
         border-radius: 25px;
         align-self: center;
         margin: 25px 0 50px 0;
-        font-size: large;
+        font-size: small;
         font-weight: bold;
         border: none;
         transition: transform .4s;
@@ -696,8 +702,13 @@ div.social ul li a{
         width: 70%;
     }
     .btn-commande i{
-        font-size: large;
+        font-size: small;
         font-weight: bold;
+    }
+
+    .btn-commande:hover{
+    background-color: rgb(27, 21, 110);
+    transform: scale(1.2);
     }
 
     .deliver{
