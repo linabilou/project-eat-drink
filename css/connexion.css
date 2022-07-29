@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* border: 1px solid red; */
+    margin: 0;
+    font-family: 'Roboto';
+}
+.container{
+    width: 992px;
+    margin: auto;
+}
+
+
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 20px 0 0 0;
+    
+}
+
+#logo img
+{
+    width: 59px;
+    height: 60px;
+}
+
+header h2
+{
+    font-size: large;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+/* Navigation */
+
+/* #nav-mobile{
+    display: none;
+} */
+
+nav{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+   
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav li{
+    margin-right: 15px;
+}
+
+nav a{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: red;
+    border: 1px solid white;
+    border-radius: 10px 10px;
+    padding: 10px;
+}
+
+#toggle-btn {
+    display: none;
+    width: 48px;
+    height: 48px;
+}
+
+.panier{
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.fa1{
+    margin: 15%;
+}
+sup{
+    font-size: x-small;
+}
+#count{
+    position: absolute;
+    top: 40px;
+    right: 142px;
+    bottom: auto;
+    left: auto;
+    background-color: red;
+    color: white;
+    border: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.signup-in{
+    text-decoration: none;
+    color: #181818;
+}
+
+.font-black{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* Footer */
+footer{
+    background-color: rgb(243, 113, 113);
+    box-sizing: border-box;
+    margin-top: 3%;
+    width: 100%;
+}
+
+.footer1{
+
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 992px;
+}
+
+.eat-drink, .hour-deliver, .contact, .newsletter{
+    width: 25%;
+}
+
+div.eat-drink h2{
+    font-size: large;
+    margin: 0;
+
+}
+
+.hour-deliver{
+    margin-left: 50px;
+}
+
+div.hour-deliver h2{
+    font-size: large;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+
+.desc{
+    font-size: small;
+    margin: 0;
+}
+
+.date{
+
+    font-weight: bold;
+    margin: 0;
+}
+.femme, .hour{
+    font-size: x-small;
+    margin-top: 0;
+}
+/* .contact{
+    margin-left: -5px;
+} */
+div.contact h2{
+    font-size: large;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.yde{
+    font-size: small;
+    font-weight: bold;
+    margin: 0;
+}
+
+.phone, .eatdrink{
+    font-size: small;
+    font-weight: bold;
+}
+
+.phone{
+    margin-bottom: 0;
+}
+
+div.newsletter h2{
+    font-size: large;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.news{
+    font-size: small;
+}
+.phone-email{
+    font-weight: bold;
+    font-size: smaller;
+}
+
+input{
+    font-size: larger;
+    text-align: center;
+    width: 100%;
+    padding: 3%;
+    border: 1px solid white;
+    border-radius: 25px 25px;
+}
+
+hr{
+   width: 78%;
+   margin: 12px auto 12px auto;
+}
+
+.separateur-social{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social{
+    margin-top: 0;
+}
+
+div.social ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+div.social ul li a{
+    color: white;
+    background-color: red; 
+    border: none;
+    border-radius: 40%;
+    padding: 0;
+}
+
+
+

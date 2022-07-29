@@ -126,6 +126,11 @@ sup{
     text-align: center;
 }
 
+.signup-in{
+    text-decoration: none;
+    color: #181818;
+}
+
 /* Home section */
 
 .home{
@@ -337,6 +342,17 @@ nav.nav-foods ul li a{
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+button a .all-btn{
+    text-decoration: none;
+    border: none;
+}
+button a .all-btn:hover{
+    color: red;
+    border: 1px solid white;
+    border-radius: 10px 10px;
+    padding: 10px;
 }
 
 .burgers-desktop{
@@ -588,6 +604,12 @@ div.social ul li a{
         width: auto;
     }
 
+    .container{
+        width: 100%;
+        margin: auto 0;
+        padding: 0 10%;
+    }
+
     
 }
 
@@ -637,14 +659,6 @@ div.social ul li a{
         display:block ;
     
     }
-
-    /* #toggle-btn:hover{
-
-    } */
-
-    /* #toggle-btn:hover{
-
-    } */
 
     /* Home section */
 
@@ -776,21 +790,40 @@ div.social ul li a{
         margin-top: 30px;
     }
     nav.nav-foods{
-        display: flex;
-        justify-content: space-evenly;
-        background-color: red;
+        background-color: blue;
         border: none;
         border-radius: 15px;
+        width: 100%;
     }
     nav.nav-foods button{
-        width: 10%;
+        width: 5%;
         margin: auto 0;
         padding: 5px;
+    }
+    nav.nav-foods ul li{
+        align-items: center;
+        font-size: smaller;
+        margin: 0;
+        
+    }
+    
+    nav .nav-foods ul li a{
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .list-img{
+        width: 15px;
     }
     
     #btn-all{
         font-size: smaller;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
     }
+
     .burgers-desktop{
         display: none;
     }

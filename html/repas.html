@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Eat and Drink Restaurant - Repas</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/repas.css">
         <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
     </head>
     <body>
@@ -13,7 +13,7 @@
             <header>
                 <div id="titre_principal">
                     <div id="logo">
-                        <img src="assets/images/res-logo.png" alt="Eat and Drink Logo">    
+                        <img src="../assets/images/res-logo.png" alt="Eat and Drink Logo">    
                     </div>
                     <h2>Eat & Drink</h2>
                 </div>
@@ -21,10 +21,11 @@
                 <nav id="nav-desktop">        
                     <ul>
                         <li><a href="../index.html" class="font-black" >Acceuil</a></li>
-                        <li><a href="#" class="font-black">Repas</a></li>
-                        <li><a href="#" class="font-black">Panier</a></li>
-                        <li><a href="#" class="font-black">Contact</a></li>
+                        <li><a href="repas.html" class="font-black">Repas</a></li>
+                        <li><a href="repas.html" class="font-black">Panier</a></li>
+                        <li><a href="#contacts" class="font-black">Contact</a></li>
                     </ul>
+    
                 </nav>
 
                 <div class="panier">
@@ -36,7 +37,7 @@
                     </div>
 
                     <div class="fa1 user">
-                        <i class="fa fa-user"></i> 
+                        <a href="../html/inscription.html" class="signup-in"><i class="fa fa-user"></i></a>
                     </div>
                     <div id="toggle-btn" class="fa1">
                         <i class="fa fa-bars"></i>
@@ -44,71 +45,91 @@
                 </div>
             </header>
 
-            <!-- Footer -->
-            <footer>
-                <div class="footer1">
-                    <div class="eat-drink">
-                        <div id="logo">
-                            <img src="assets/images/res-logo.png" alt="Eat and Drink Logo">    
-                        </div>
-                        <h2>Eat & Drink</h2> 
-                        <p class="desc">
-                            Jamais trop de frites, Une pepite de poulet est ce qu'il
-                            vous faut, Savourez la saveur C'est le jour de la triche,
-                            n'aie pas peur.
-                        </p>
-                    </div>
-        
-                    <div class="hour-deliver">
-                        <h2>Heure de livraison</h2>
-                        <p class="desc date">
-                            Dimanche - Lundi
-                        </p>
-                        <p class="hour">10:00 23:00</p>                    
-                        <p class="desc date">
-                            Vendredi -Samedi
-                        </p>
-                        <p class="femme">Femme</p>  
-                    </div>
-        
-                    <div class="contact">
-                        <h2>Contact</h2>
-                        <p class="yde">Yaounde CMR Ngoa-Ekelle</p>
-                        <p class="phone">  
-                        <span class="phone-mobile">Phone: +237 694 00 00 00 </span><br>
-                        <span>Email: eatdrink@gmail.com</span> 
-                        </p>
-                    </div>
-        
-                    <div class="newsletter">
-                        <h2>Newsletter</h2>
-                        <p class="news">Abonnez-vous à notre newsletter</p>
-                        <input type="email" name="newsletter" id="newsletter" placeholder="Votre email">
-                    </div>
+            <!-- Main section -->
+
+            <main id="repas">
+                <!-- Photo + title -->
+                <div class="repa">
+                    <h2>Repas</h2>
+                </div>
+
+                <div class="recherche">
 
                 </div>
 
-                <div class="n">
-                    <div class="separateur">
-                        <hr>
-                    </div>
-
-                    <div class="social-media">
-                        <div class="social">
-                            <ul>
-                                <li>Nous suivre</li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></i></li>
-                                <li><a href="#"><i class="fa fa-youtube"></i></a></i></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-
-            <!-- Script Javascript -->
-            <script src="js/script.js"></script>
+            </main>
         </div>
+
+         <!-- Footer -->
+         <footer>
+           
+            <div class="footer1">
+                <div class="eat-drink">
+                    <div id="logo">
+                        <img src="../assets/images/res-logo.png" alt="Eat and Drink Logo">    
+                    </div>
+                    <h2>Eat & Drink</h2> 
+                    <p class="desc">
+                        Jamais trop de frites, Une pepite de poulet est ce qu'il
+                        vous faut, Savourez la saveur C'est le jour de la triche,
+                        n'aie pas peur.
+                    </p>
+
+                    
+                </div>
+    
+                <div class="hour-deliver">
+                    <h2>Heure de livraison</h2>
+                    <p class="desc date">
+                        Dimanche - Lundi
+                    </p>
+                    <p class="hour">10:00 23:00</p>                    
+                    <p class="desc date">
+                        Vendredi -Samedi
+                    </p>
+                    <p class="femme">Femme</p>  
+    
+                </div>
+    
+                <div id="contacts" class="contact">
+                    <h2>Contact</h2>
+                    <p class="yde">Yaounde CMR Ngoa-Ekelle</p>
+                    <p class="phone">  
+                       <span class="phone-mobile">Phone: +237 694 00 00 00 </span><br>
+                       <span>Email: eatdrink@gmail.com</span> 
+                    </p>
+                </div>
+    
+                <div class="newsletter">
+                    <h2>Newsletter</h2>
+                    <p class="news">Abonnez-vous à notre newsletter</p>
+                    <input type="email" name="newsletter" id="newsletter" placeholder="Votre email">
+                </div>
+
+            </div>
+
+            <div class="n">
+                <div class="separateur">
+                    <hr>
+                </div>
+
+                <div class="social-media">
+                    <div class="social">
+                        <ul>
+                            <li>Nous suivre</li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></i></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- Script Javascript -->
+        <script src="js/script.js"></script>
+
     </body>
 </html>
