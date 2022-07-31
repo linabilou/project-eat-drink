@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Eat and Drink Restaurant - Connexion</title>
         <link rel="stylesheet" href="../css/connexion.css">
-        <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    type="text/css" />
+        <!-- <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css"> -->
     </head>
     <body>
         <div class="container">
@@ -20,13 +22,14 @@
 
                 <nav id="nav-desktop">        
                     <ul>
-                        <li><a href="./index.html" class="font-black" >Acceuil</a></li>
-                        <li><a href="./html/repas.html" class="font-black">Repas</a></li>
-                        <li><a href="./html/repas.html" class="font-black">Panier</a></li>
+                        <li><a href="../index.html" class="font-black" >Acceuil</a></li>
+                        <li><a href="../html/repas.html" class="font-black">Repas</a></li>
+                        <li><a href="../html/repas.html" class="font-black">Panier</a></li>
                         <li><a href="#contacts" class="font-black">Contact</a></li>
                     </ul>
     
                 </nav>
+
                 <div class="panier">
                     <div class="fa1">
                         <i class="fa fa-shopping-basket"></i>    
@@ -43,24 +46,36 @@
                     </div>
                 </div>
             </header>
+        </div>
 
+        <!-- Photo + title : Background -->
+        <div class="connexion">
+            <p class="title-signin">Connexion</p>
+        </div>
+
+        <div class="container">
             <!-- Main section -->
-
-            <main id="connexion">
-                <!-- Photo + title -->
-                <div class="signin">
-                    <h2>Connexion</h2>
+            <main id="signin">
+                <div class="login">
+                    <form action="" method="post">
+                       <div class="informations">
+                            <label for="email">E-mail</label><br>
+                            <input type="text" name="email" id="email" required>
+                       </div>
+                       <div class="informations">
+                            <label for="password">Mot de Passe</label><br>
+                            <input type="password" name="password" id="password" required>
+                       </div>
+                        <div class="envoie">
+                            <input type="submit" value="Connexion" id="submit">
+                        </div>
+                    </form>
                 </div>
-
-                <div class="formulaire">
-
-                </div>
-
             </main>
         </div>
-          <!-- Footer -->
-          <footer>
-           
+
+         <!-- Footer -->
+         <footer>
             <div class="footer1">
                 <div class="eat-drink">
                     <div id="logo">
@@ -85,7 +100,7 @@
                     <p class="desc date">
                         Vendredi -Samedi
                     </p>
-                    <p class="femme">Femme</p>  
+                    <p class="ferme">Fermé</p>  
     
                 </div>
     
@@ -115,10 +130,10 @@
                     <div class="social">
                         <ul>
                             <li>Nous suivre</li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></i></li>
-                            <li><a href="#"><i class="fa fa-youtube"></i></a></i></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                         </ul>
                     </div>
                 </div>

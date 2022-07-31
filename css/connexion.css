@@ -8,11 +8,52 @@ body{
     /* border: 1px solid red; */
     margin: 0;
     font-family: 'Roboto';
+    border: 1px solid red;
 }
 .container{
     width: 992px;
     margin: auto;
+    border: 1px solid rebeccapurple;
 }
+
+main{
+    border: 2px solid orange;
+    margin: 3% 10% 3%;
+}
+
+.login{
+    border: 2px solid green;
+    background-color: rgba(243, 113, 113, 0.3);
+}
+
+div.login form{
+    margin: 5% 30%;
+ }
+ 
+ div.informations input{
+     padding: 10px;
+     margin: 15px 0;
+     background: none;
+     width: 100%;
+     border: 1px solid gray;
+ }
+ 
+ .envoie{
+     text-align: center;
+     margin-top: 5%;
+ }
+ 
+ div.envoie input{
+     padding: 10px;
+     margin: 15px 0;
+     background-color: red;
+     color: white;
+     font-size: large;
+     width: 50%;
+     border: none;
+     border-radius: 10px;
+ }
+ 
 
 
 /* Header */
@@ -113,7 +154,7 @@ sup{
 #count{
     position: absolute;
     top: 40px;
-    right: 142px;
+    right: 135px;
     bottom: auto;
     left: auto;
     background-color: red;
@@ -137,9 +178,26 @@ sup{
     font-weight: bold;
 }
 
+/* Home */
+.connexion{
+    border: 1px solid red;
+    margin-top: 0;
+    background-image: url("../assets/images/background_Mask.png");
+    color: white;
+    height: 43vh;
+}
+
+.title-signin{
+    font-size: xx-large;
+    font-weight: bold;
+    margin-left: 5.5% ;
+    margin-top: 7%;
+    padding: 5%;
+}
+
 /* Footer */
 footer{
-    background-color: rgb(243, 113, 113);
+    background-color: rgba(243, 113, 113, 0.3);;
     box-sizing: border-box;
     margin-top: 3%;
     width: 100%;
@@ -184,7 +242,7 @@ div.hour-deliver h2{
     font-weight: bold;
     margin: 0;
 }
-.femme, .hour{
+.ferme, .hour{
     font-size: x-small;
     margin-top: 0;
 }
@@ -226,7 +284,7 @@ div.newsletter h2{
     font-size: smaller;
 }
 
-input{
+#newsletter{
     font-size: larger;
     text-align: center;
     width: 100%;

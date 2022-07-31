@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Eat and Drink Restaurant - Inscription</title>
         <link rel="stylesheet" href="../css/inscription.css">
-        <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    type="text/css" />
+        <!-- <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css"> -->
     </head>
     <body>
         <div class="container">
@@ -42,25 +44,79 @@
                     <div id="toggle-btn" class="fa1">
                         <i class="fa fa-bars"></i>
                     </div>
-                 </div>
+                </div>
             </header>
+        </div>
 
+        <!-- Photo + title : Background -->
+        <div class="inscription">
+            <p class="title-signup">Inscription</p>
+        </div>
+        <div class="container">
             <!-- Main section -->
 
-            <main id="inscription">
-                <!-- Photo + title -->
+            <main id="sign-up">
                 <div class="signup">
-                    <h2>Inscription</h2>
+                    <form action="" method="post">
+                        <div class="informations">
+                            <label for="firstname">Prénom</label> <br>
+                            <input type="text" name="firstname" id="firstname" required> 
+                        </div>
+                        <div class="informations">
+                            <label for="lastname">Nom</label><br>
+                            <input type="text" name="lastname" id="lastname" required>
+                       </div>
+                       <div class="informations">
+                            <label for="email">E-mail</label><br>
+                            <input type="text" name="email" id="email" required>
+                       </div>
+                       <div class="informations">
+                            <label for="password">Mot de Passe</label><br>
+                            <input type="password" name="password" id="password" required>
+                       </div>
+                       <div class="informations">
+                            <label for="password">Confirmation du Mot de Passe</label><br>
+                            <input type="password" name="password" id="password" required>
+                       </div>
+                       <p class="residence">Vous residez dans quel quartier de la ville de Yaoundé ?</p> 
+                        <div class="lieu">
+                            <input type="radio" name="quartier" value="bastos" id="bastos">
+                            <label for="bastos">Bastos</label>
+
+                            <input type="radio" name="quartier" value="mendong" id="mendong">
+                            <label for="mendong">Mendong</label>
+
+                            <input type="radio" name="quartier" value="odza" id="odza">
+                            <label for="odza">Odza</label>
+
+                            <input type="radio" name="quartier" value="ngoa" id="ngoa">
+                            <label for="ngoa">Ngoa</label>
+
+                            <input type="radio" name="quartier" value="essos" id="essos">
+                            <label for="essos">Essos</label>
+
+                            <input type="radio" name="quartier" value="jouvence" id="jouvence">
+                            <label for="jouvence">Montée Jouvence</label>
+                        </div>
+
+                        <div class="conditions">
+                            <input type="checkbox" name="condition" id="condition" required>
+                            <label for="condition"> J'ai lu et accepté les conditions d'utilisation</label>
+                        </div>
+
+                        <div class="envoie">
+                            <input type="submit" value="Inscription" id="submit">
+                        </div>
+                    </form>
                 </div>
-
-                <div class="formulaire">
-
+                <div class="question">
+                    <p>Vous avez déjà un compte ? <a href="connexion.html">Connectez vous ici</a></p>
                 </div>
-
             </main>
         </div>
-          <!-- Footer -->
-          <footer>
+
+         <!-- Footer -->
+         <footer>
            
             <div class="footer1">
                 <div class="eat-drink">
@@ -86,7 +142,7 @@
                     <p class="desc date">
                         Vendredi -Samedi
                     </p>
-                    <p class="femme">Femme</p>  
+                    <p class="ferme">Fermé</p>  
     
                 </div>
     
@@ -116,10 +172,10 @@
                     <div class="social">
                         <ul>
                             <li>Nous suivre</li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></i></li>
-                            <li><a href="#"><i class="fa fa-youtube"></i></a></i></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                         </ul>
                     </div>
                 </div>

@@ -113,7 +113,7 @@ sup{
 #count{
     position: absolute;
     top: 40px;
-    right: 142px;
+    right: 135px;
     bottom: auto;
     left: auto;
     background-color: red;
@@ -137,10 +137,33 @@ sup{
     font-weight: bold;
 }
 
+/* Home */
+
+
+
+.repa{
+    border: 1px solid red;
+    margin-top: 0;
+    background-image: url("../assets/images/background_Mask.png");
+    color: white;
+    height: 43vh;
+}
+
+.title-repas{
+    font-size: xx-large;
+    font-weight: bold;
+    margin-left: 5.5% ;
+    margin-top: 7%;
+    padding: 5%;
+}
+
+main {
+    border: 2px solid orange;
+}
 
 /* Footer */
 footer{
-    background-color: rgb(243, 113, 113);
+    background-color: rgba(243, 113, 113, 0.3);;
     box-sizing: border-box;
     margin-top: 3%;
     width: 100%;
@@ -185,7 +208,7 @@ div.hour-deliver h2{
     font-weight: bold;
     margin: 0;
 }
-.femme, .hour{
+.ferme, .hour{
     font-size: x-small;
     margin-top: 0;
 }
@@ -227,7 +250,7 @@ div.newsletter h2{
     font-size: smaller;
 }
 
-input{
+#newsletter{
     font-size: larger;
     text-align: center;
     width: 100%;
