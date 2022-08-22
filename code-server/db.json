@@ -1,16 +1,33 @@
 {
     "products":[
         {
-            "id":"00",
-            "img":"",
-            "title":"",
-            "price":"",
-            "category":"",
-            "desc":""
+            "id": "00",
+            "title": "Salade",
+            "price": 2000,
+            "img": "product_0.jpg",
+            "category": "Salade",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. "
         },
         {
-            
+
         }
 
-    ]
+    ],
+    "posts": [
+        {
+          "id": 1,
+          "title": "json-server",
+          "author": "typicode"
+        }
+      ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some comment",
+            "postId": 1
+        }
+    ],
+    "profile": {
+    "name": "typicode"
+    }
 }

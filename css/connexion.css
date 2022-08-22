@@ -10,51 +10,6 @@ body{
     font-family: 'Roboto';
     border: 1px solid red;
 }
-.container{
-    width: 992px;
-    margin: auto;
-    border: 1px solid rebeccapurple;
-}
-
-main{
-    border: 2px solid orange;
-    margin: 3% 10% 3%;
-}
-
-.login{
-    border: 2px solid green;
-    background-color: rgba(243, 113, 113, 0.3);
-}
-
-div.login form{
-    margin: 5% 30%;
- }
- 
- div.informations input{
-     padding: 10px;
-     margin: 15px 0;
-     background: none;
-     width: 100%;
-     border: 1px solid gray;
- }
- 
- .envoie{
-     text-align: center;
-     margin-top: 5%;
- }
- 
- div.envoie input{
-     padding: 10px;
-     margin: 15px 0;
-     background-color: red;
-     color: white;
-     font-size: large;
-     width: 50%;
-     border: none;
-     border-radius: 10px;
- }
- 
-
 
 /* Header */
 
@@ -95,11 +50,6 @@ header h2
 }
 
 /* Navigation */
-
-/* #nav-mobile{
-    display: none;
-} */
-
 nav{
     list-style-type: none;
     display: flex;
@@ -190,6 +140,61 @@ sup{
     margin-left: 5.5% ;
     margin-top: 7%;
     padding: 5%;
+}
+
+
+.container{
+    width: 992px;
+    margin: auto;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main{
+    width: 50%;
+    margin: 3% 10% 3%;
+}
+
+.form{
+    background-color: rgba(243, 113, 113, 0.3);
+    padding: 50px;
+
+}
+
+.informations{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 15px;
+}
+
+div.informations input{
+    padding: 10px;
+    margin: 0;
+    background: none;
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.submit{
+    text-align: center;
+    margin-top: 5%;
+   
+}
+
+div.submit input{
+    padding: 10px;
+    margin: 15px 0;
+    background-color: red;
+    color: white;
+    font-size: large;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 /* Footer */

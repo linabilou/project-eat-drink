@@ -10,72 +10,6 @@ body{
     font-family: 'Roboto';
     border: 1px solid red;
 }
-.container{
-    width: 992px;
-    margin: auto;
-    border: 1px solid rebeccapurple;
-}
-
-main{
-    border: 2px solid orange;
-    margin: 3% 10% 3%;
-}
-
-.signup{
-    border: 2px solid green;
-    background-color: rgba(243, 113, 113, 0.3);
-}
-
-div.signup form{
-   margin: 5% 30%;
-}
-
-div.informations input{
-    padding: 10px;
-    margin: 15px 0;
-    background: none;
-    width: 100%;
-    border: 1px solid gray;
-}
-
-
-
-.conditions{
-    margin-top: 5%;
-    width: 100%;
-}
-
-/* div.conditions input{
-    padding: 5px;
-    background: none;
-} */
-
-.envoie{
-    text-align: center;
-    margin-top: 5%;
-}
-
-div.envoie input{
-    padding: 10px;
-    margin: 15px 0;
-    background-color: red;
-    color: white;
-    font-size: large;
-    width: 50%;
-    border: none;
-    border-radius: 10px;
-}
-
-.question{
-    margin-top: 0;
-    text-align: center;
-    font-weight: bold;
-}
-
-div.question a{
-    text-decoration: none;
-    color: black;
-}
 
 /* Header */
 
@@ -196,6 +130,7 @@ sup{
     font-weight: bold;
 }
 
+
 /* Home */
 .inscription{
     border: 1px solid red;
@@ -212,6 +147,141 @@ sup{
     margin-top: 7%;
     padding: 5%;
 }
+.container{
+    width: 992px;
+    margin: auto;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main{
+    width: 60%;
+    margin: 3% 10% 3%;
+}
+
+.form{
+    background-color: rgba(243, 113, 113, 0.3);
+    padding: 40px 85px;
+
+}
+
+.informations{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 5px;
+}
+
+div.informations input{
+    padding: 10px;
+    margin: 0;
+    background: none;
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.residence{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 5px;
+}
+
+.lieu{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: left;
+}
+.radio-item {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    margin: 10px 0 0;
+    
+}
+  
+.radio-item input[type='radio'] {
+    display: none;
+}
+
+.radio-item label {
+    font-weight: normal;
+    margin: 5px 5px 5px 0;
+    cursor: pointer;
+}
+
+.radio-item label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 10px;
+    
+}
+
+.radio-item input[type=radio]:checked + label:after {
+    border-radius: 11px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    content: " ";
+    display: block;
+    background: white;
+}
+
+
+.conditions{
+    margin-top: 5%;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 5px;
+}
+
+.submit{
+    text-align: center;
+    margin-top: 5%;
+   
+}
+
+div.submit input{
+    padding: 10px;
+    margin: 15px 0;
+    background-color: red;
+    color: white;
+    font-size: large;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.question{
+    margin-top: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+div.question a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
 
 /* Footer */
 footer{

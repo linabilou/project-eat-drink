@@ -57,54 +57,72 @@
 
             <main id="sign-up">
                 <div class="signup">
-                    <form action="" method="post">
+                    <form action="" method="post" class="form" id="form">
                         <div class="informations">
                             <label for="firstname">Prénom</label> <br>
-                            <input type="text" name="firstname" id="firstname" required> 
+                            <input type="text" value="firstname" name="firstname" id="firstname" required autofocus> 
+                            <div class="form__input-error-message"></div>
                         </div>
                         <div class="informations">
                             <label for="lastname">Nom</label><br>
-                            <input type="text" name="lastname" id="lastname" required>
+                            <input type="text" value="lastname" name="lastname" id="lastname" required autofocus>
                        </div>
-                       <div class="informations">
+                       <div class="informations" id="e-mail">
                             <label for="email">E-mail</label><br>
-                            <input type="text" name="email" id="email" required>
-                       </div>
-                       <div class="informations">
+                            <input type="email" value="email" name="email" id="email" required autofocus>
+                            <div class="form__input-error-message"></div>
+                        </div>
+                       <div class="informations" id="password">
                             <label for="password">Mot de Passe</label><br>
-                            <input type="password" name="password" id="password" required>
-                       </div>
-                       <div class="informations">
+                            <input type="password" value="password" name="password" class="password" required autofocus>
+                            <div class="form__input-error-message"></div>
+                        </div>
+                       <div class="informations" id="confirm-password">
                             <label for="password">Confirmation du Mot de Passe</label><br>
-                            <input type="password" name="password" id="password" required>
-                       </div>
+                            <input type="password" value="password" name="password" class="password" required autofocus>
+                            <div class="form__input-error-message"></div>
+                        </div>
                        <p class="residence">Vous residez dans quel quartier de la ville de Yaoundé ?</p> 
-                        <div class="lieu">
-                            <input type="radio" name="quartier" value="bastos" id="bastos">
-                            <label for="bastos">Bastos</label>
+                        <div class="lieu" id="lieu">
+                            <div class="radio-item">
+                                <input type="radio"  name="quartier" value="bastos" id="bastos">
+                                <label for="bastos">Bastos</label>
+                            </div>
 
-                            <input type="radio" name="quartier" value="mendong" id="mendong">
-                            <label for="mendong">Mendong</label>
+                            <div class="radio-item">
+                                <input type="radio"  name="quartier" value="mendong" id="mendong">
+                                <label for="mendong">Mendong</label>
+                            </div>
 
-                            <input type="radio" name="quartier" value="odza" id="odza">
-                            <label for="odza">Odza</label>
+                           <div class="radio-item">
+                                <input type="radio"  name="quartier" value="odza" id="odza">
+                                <label for="odza">Odza</label>
+                           </div>
 
-                            <input type="radio" name="quartier" value="ngoa" id="ngoa">
-                            <label for="ngoa">Ngoa</label>
+                           <div class="radio-item">
+                                <input type="radio"  name="quartier" value="ngoa" id="ngoa">
+                                <label for="ngoa">Ngoa</label>
+                           </div>
 
-                            <input type="radio" name="quartier" value="essos" id="essos">
-                            <label for="essos">Essos</label>
+                           <div class="radio-item">
+                                <input type="radio"  name="quartier" value="essos" id="essos">
+                                <label for="essos">Essos</label>
+                           </div>
 
-                            <input type="radio" name="quartier" value="jouvence" id="jouvence">
-                            <label for="jouvence">Montée Jouvence</label>
+                           <div class="radio-item">
+                                <input type="radio"  name="quartier" value="jouvence" id="jouvence">
+                                <label for="jouvence">Montée Jouvence</label>
+                           </div>
+
+                            <div class="form__input-error-message"></div>
                         </div>
 
                         <div class="conditions">
-                            <input type="checkbox" name="condition" id="condition" required>
+                            <input type="checkbox"  name="condition" id="condition" required autofocus>
                             <label for="condition"> J'ai lu et accepté les conditions d'utilisation</label>
                         </div>
 
-                        <div class="envoie">
+                        <div class="submit">
                             <input type="submit" value="Inscription" id="submit">
                         </div>
                     </form>

@@ -56,17 +56,19 @@
         <div class="container">
             <!-- Main section -->
             <main id="signin">
-                <div class="login">
-                    <form action="" method="post">
-                       <div class="informations">
+                <div class="login" id="login">
+                    <form action="" method="post" class="form" id="form">
+                       <div class="informations" id="e-mail">
                             <label for="email">E-mail</label><br>
-                            <input type="text" name="email" id="email" required>
-                       </div>
-                       <div class="informations">
+                            <input type="email" value="email" name="email" id="email" required autofocus>
+                            <div class="form__input-error-message"></div>
+                        </div>
+                       <div class="informations" id="pass-word">
                             <label for="password">Mot de Passe</label><br>
-                            <input type="password" name="password" id="password" required>
-                       </div>
-                        <div class="envoie">
+                            <input type="password" value="password" name="password" id="password" required autofocus>
+                            <div class="form__input-error-message"></div>
+                        </div>
+                        <div class="submit">
                             <input type="submit" value="Connexion" id="submit">
                         </div>
                     </form>
