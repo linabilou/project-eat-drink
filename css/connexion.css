@@ -11,6 +11,19 @@ body{
     border: 1px solid red;
 }
 
+
+.container1{
+    width: 992px;
+    margin: auto;
+}
+
+.container2{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 /* Header */
 
 header
@@ -142,15 +155,6 @@ sup{
     padding: 5%;
 }
 
-
-.container{
-    width: 992px;
-    margin: auto;
-    display: flex;   
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
 main{
     width: 50%;
