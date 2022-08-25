@@ -5,10 +5,8 @@
 }
 
 body{
-    /* border: 1px solid red; */
     margin: 0;
     font-family: 'Roboto';
-    border: 1px solid red;
 }
 
 
@@ -149,6 +147,7 @@ sup{
     border: 1px solid red;
     margin-top: 0;
     background-image: url("../assets/images/background_Mask.png");
+    background-size: cover;
     color: white;
     height: 43vh;
 }
@@ -162,13 +161,13 @@ sup{
 }
 
 main{
-    width: 60%;
+    width: 50%;
     margin: 3% 10% 3%;
 }
 
 .form{
     background-color: rgba(243, 113, 113, 0.3);
-    padding: 40px 85px;
+    padding: 40px 100px;
 
 }
 

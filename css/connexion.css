@@ -5,10 +5,8 @@
 }
 
 body{
-    /* border: 1px solid red; */
     margin: 0;
     font-family: 'Roboto';
-    border: 1px solid red;
 }
 
 
@@ -143,6 +141,7 @@ sup{
     border: 1px solid red;
     margin-top: 0;
     background-image: url("../assets/images/background_Mask.png");
+    background-size: cover;
     color: white;
     height: 43vh;
 }
